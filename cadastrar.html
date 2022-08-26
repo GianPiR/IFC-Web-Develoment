@@ -7,45 +7,87 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.html" method="PUT">
-        <div>
-            <label for="name">Nome</label><input type="text" name="name" id="name">
-            <label for="sobrenome">Sobrenome</label><input type="text" name="sobrenome" id="sobrenome">
-            <br>
-            <label for="Idade">Idade</label><input type="text" name="idade" id="idade">
-            <br>
-            <label for="telefone">Telefone</label><input type="text" name="telefone" id="telefone">
-        </div>
-        <div>
-            <label for="nascimento">Data de Nascimento</label><input type="date" name="nascimento" id="nascimento">
-            <br>
-            <label for="parente">Parente</label><input type="radio" name="parente" id="parente">
-        </div>
-        <div>
-            <br>
-            <span><strong>Origem:</strong></span>
-            <br>
-            <label for="escola">Escola</label><input type="radio" name="origem" id="escola">
-            <br>
-            <label for="trabalho">Trabalho</label><input type="radio" name="origem" id="trabalho">
-            <br>
-            <label for="outro">Outro</label><input type="radio" name="origem" id="outro">
-            <br>
-        </div>
-        <div>
-            <br>
-            <label for="foto">Foto: </label><input type="file" name="foto" id="foto">
-            <br>
-            <br>
-            <span><strong>Sexo:</strong></span>
-            <label for="masculino">Masculino</label><input type="radio" name="sexo" id="masculino">
-            <label for="feminino">Feminino</Fabel><input type="radio" name="sexo" id="feminino">
-        </div>
-        <div>
-            <br>
-            <input type="submit" name="salvar" id="salvar">
-            <input type="reset" name="cancelar" id="cancelar">
-        </div>
-    </form>
+    <div class="container">
+        <form action="index.html" method="PUT">
+            <fieldset>
+                <fieldset>
+                    <div>
+                        <label for="name">Nome</label><input type="text" name="name" id="name">
+                        <label for="sobrenome">Sobrenome</label><input type="text" name="sobrenome" id="sobrenome">
+                        <br>
+                        <label for="Idade">Idade</label><input type="text" name="idade" id="idade">
+                        <br>
+                        <label for="telefone">Telefone</label><input type="text" name="telefone" id="telefone">
+                    </div>
+                    <div>
+                        <label for="nascimento">Data de Nascimento</label><input type="date" name="nascimento" id="nascimento">
+                        <br>
+                        <label for="parente">Parente</label><input type="radio" name="parente" id="parente">
+                    </div>
+                    <div>
+                        <br>
+                        <span><strong>Origem:</strong></span>
+                        <br>
+                        <label for="escola">Escola</label><input type="radio" name="origem" id="escola">
+                        <br>
+                        <label for="trabalho">Trabalho</label><input type="radio" name="origem" id="trabalho">
+                        <br>
+                        <label for="outro">Outro</label><input type="radio" name="origem" id="outro">
+                        <br>
+                    </div>
+                    <div>
+                        <br>
+                        <label for="foto">Foto: </label><input type="file" name="foto" id="foto">
+                        <br>
+                        <br>
+                        <span><strong>Sexo:</strong></span>
+                        <label for="masculino">Masculino</label><input type="radio" name="sexo" id="masculino">
+                        <label for="feminino">Feminino</Fabel><input type="radio" name="sexo" id="feminino">
+                    </div>
+                    <div>
+                        <label for="rede">Rede Social:</label>
+                        <input type="text" id="rede" name="rede">
+                    </div>
+                </fieldset>
+                <br>
+                <div>
+                    <fieldset>
+                        <legend>Endereço:</legend>
+                        <div>
+                            <label for="estado">Estado:</label>
+                            <select name="estado" id="estado">
+                                <option value="0">Selecione</option>
+                                <option value="1">Acre</option>
+                                <option value="2">Paraná</option>
+                                <option value="3">Rio Grande do Sul</option>
+                                <option value="4">Santa Catarina</option>
+                                <option value="5">São Paulo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cidade">Cidade:</label>
+                            <select name="cidade" id="cidade">
+                                <option value="0">Selecione</option>
+                                <option value="1">Joinville</option>
+                                <option value="2">Florianópolis</option>
+                                <option value="3">Itajaí</option>
+                                <option value="4">Blumenau</option>
+                                <option value="5">Rio do Sul</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </div>
+                <br>
+                <div>
+                    <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Descreva seu contato, adicione demais informações"></textarea>
+                </div>
+                <div>
+                    <br>
+                    <input type="submit" name="salvar" id="salvar">
+                    <input type="reset" name="cancelar" id="cancelar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
