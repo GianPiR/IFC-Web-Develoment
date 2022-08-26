@@ -1,0 +1,19 @@
+.menu{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    color: black;
+}
+
+table, th{
+    border-style: groove;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    border-style: groove;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
