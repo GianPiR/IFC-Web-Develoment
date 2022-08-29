@@ -1,7 +1,7 @@
 # Programação Orientada a Objetos
 
 IFC - Instituto Federal Catarinense;
-Prof: Marcela Leite;
+Profª: Marcela Leite;
 
 ## Parte 1 - HTML Básico
 
