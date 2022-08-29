@@ -1,4 +1,35 @@
-.container{
+/* Self Clearing Goodness */
+.container:after, .row:after, .u-cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Utilities */
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Base */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+}
+
+.container, footer{
     position: relative;
     width: 100%;
     max-width: 960px;
@@ -8,42 +39,162 @@
 }
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+    .container, footer {
+        width: 85%;
+        padding: 0; }
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    .container, footer {
+        width: 80%;
+        padding: 0; }
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    .container, footer {
+        width: 75%;
+        padding: 0; }
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    .container, footer {
+        width: 70%;
+        padding: 0; }
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .container, footer {
+        width: 65%;
+        padding: 0; }
+}
 
-.menu{
-    list-style-type: none;
+/* Links */
+a {
+    color: #1EAEDB;
+}
+
+a:hover {
+    color: #0FA0CE;
+}
+
+/* Forms */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
     display: inline-block;
-    padding: 15px;
-    color: black;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
-.contatos{
-    border-style: groove;
-    border: 1px solid black;
-    border-collapse: collapse;
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0;
 }
 
-.contatos th{
-    border-style: groove;
-    border: 1px solid black;
-    border-collapse: collapse;
+input[type="radio"],
+input[type="checkbox"] {
+    height: 12px;
+    padding: 6px 10px;
+    accent-color:#33C3F0;
+    display: inline;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
 }
 
-.contatos td{
-    border-style: groove;
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: left;
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+select:focus, textarea:focus, input[type="text"]:focus, input[type="date"]:focus {
+    border: 1px solid #33C3F0;
+    outline: 0;
+}
+
+legend {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+/* Spacing */
+button, .button {
+    margin-bottom: 1rem;
+}
+
+input, textarea, select, fieldset {
+    margin-bottom: 1.5rem;
+}
+
+table, p, form {
+    margin-bottom: 2.5rem;
+}
+
+/* Lists */
+th, td {
+  border-bottom: 1px solid #E1E1E1;
+  padding-left: 0;
+  margin-top: 0;
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+
+.menu ul {
+    list-style: circle inside;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.menu ul ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+
+.menu li {
+    margin-bottom: 1rem;
 }
